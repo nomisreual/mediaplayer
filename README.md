@@ -38,10 +38,10 @@ This in conjunction with the following module in `waybar` already displays playi
     "max-length": 40,
     "on-click": "playerctl play-pause",
     "on-click-right": "playerctl stop",
-    "smooth-scrolling-threshold": 10, // This value was tested using a trackpad, it should be lowered if using a mouse.
+    "smooth-scrolling-threshold": 10,
     "on-scroll-up": "playerctl next",
     "on-scroll-down": "playerctl previous",
-    "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null", // Script in resources/custom_modules folder
+    "exec": "mediaplayer 2> /dev/null",
 }
 ```
 
