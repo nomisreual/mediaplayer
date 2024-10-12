@@ -45,4 +45,4 @@ This in conjunction with the following module in `waybar` already displays playi
 }
 ```
 
-If you want the `playerctl` functionality clicking on scrolling, you need to add the `playerctl` package as well.
+If you want the `playerctl` functionality (clicking and scrolling), you need to add the `playerctl` package as well.
