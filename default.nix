@@ -1,8 +1,10 @@
-{ pkgs ? import <nixpkgs> { } }:
-
-pkgs.python3Packages.buildPythonApplication {
+{pkgs ? import <nixpkgs> {}}:
+pkgs.python313Packages.buildPythonApplication {
   pname = "mediaplayer";
   version = "0.1.0";
+
+  pyproject = true;
+  build-system = [pkgs.python313Packages.setuptools];
 
   propagatedBuildInputs = with pkgs.python3Packages; [
     pygobject3
